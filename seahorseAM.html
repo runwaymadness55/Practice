@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>seahorse serenity</title>
+    <style media="screen">
+      * {box-sizing: border-box;}
+
+      main {
+        width: 80%;
+        margin: 0 auto;
+        background: #ddd;
+      }
+
+      nav {
+        width: 20%;
+        background: #fed;
+        float: left;
+      }
+
+      article {
+        width: 80%;
+        background: yellow;
+        float: left;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      img {
+        float: right;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <main>
+
+      <header class="clearfix">
+        <h1>Seahorse Serenity</h1>
+        <img src="116Horsea_Dream.png" alt="Seahorses Kick Butt">
+      </header>
+
+      <div id="content" class="clearfix">
+        <nav>
+          <h2>Navigation</h2>
+        </nav>
+        <article>
+          <h2>Content</h2>
+        </article>
+      </div>
+
+      <footer class="clearfix">
+        <h2>Footer Links</h2>
+        <p>Copyright Stuff</p>
+      </footer>
+
+    </main>
+
+  </body>
+
+</html>
