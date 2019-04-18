@@ -1,170 +1,191 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Tests and Stuff</title>
-    <style media="screen">
-      img {
-        border: 2px solid black;
-        margin: 15px;
-        border-radius: 20px;
-        max-width: 100%;
-        height: auto;
-      }
-      .bob {
-        border-radius: 50px;
-        background-color: #FFDB60;
-      }
-      .ears {
-        background-color: #EB3737;
-      }
-      body {
-        background-image: url(Eyes.jpg);
-      }
 
-.cube {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    backface-visibility: visible;
-    perspective-origin: 150% 150%;
-    transform-style: preserve-3d;
-}
-.face {
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border: none;
-    line-height: 200px;
-    font-family: sans-serif;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Tests and Stuff</title>
+  <style media="screen">
+    img {
+      border: 2px solid black;
+      margin: 15px;
+      border-radius: 20px;
+      max-width: 100%;
+      height: auto;
+    }
 
-/* Define each face based on direction */
-.front {
-    background: rgba(0, 0, 0, 0.3);
-    transform: translateZ(100px);
-}
+    .bob {
+      border-radius: 50px;
+      background-color: #FFDB60;
+    }
 
-.back {
-    background: rgba(0, 255, 0, 1);
-    color: black;
-    transform: rotateY(180deg) translateZ(100px);
-}
+    .ears {
+      background-color: #EB3737;
+    }
 
-.right {
-    background: rgba(196, 0, 0, 0.7);
-    transform: rotateY(90deg) translateZ(100px);
-}
+    body {
+      background-image: url(Eyes.jpg);
+    }
 
-.left {
-    background: rgba(0, 0, 196, 0.7);
-    transform: rotateY(-90deg) translateZ(100px);
-}
+    .cube {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      backface-visibility: visible;
+      perspective-origin: 150% 150%;
+      transform-style: preserve-3d;
+    }
 
-.top {
-    background: rgba(196, 196, 0, 0.7);
-    transform: rotateX(90deg) translateZ(100px);
-}
+    .face {
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: none;
+      line-height: 200px;
+      font-family: sans-serif;
+      font-size: 60px;
+      color: white;
+      text-align: center;
+    }
 
-.bottom {
-    background: rgba(196, 0, 196, 0.7);
-    transform: rotateX(-90deg) translateZ(100px);
-}
-.cube {
-    perspective: 800px;
-}
-.cube {
-    animation: rotate 10s linear infinite;
-}
-@keyframes rotate {
-    from {
+    /* Define each face based on direction */
+    .front {
+      background: rgba(0, 0, 0, 0.3);
+      transform: translateZ(100px);
+    }
+
+    .back {
+      background: rgba(0, 255, 0, 1);
+      color: black;
+      transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .right {
+      background: rgba(196, 0, 0, 0.7);
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .left {
+      background: rgba(0, 0, 196, 0.7);
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .top {
+      background: rgba(196, 196, 0, 0.7);
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .bottom {
+      background: rgba(196, 0, 196, 0.7);
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    .cube {
+      perspective: 800px;
+    }
+
+    .cube {
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
         transform: rotateY(-180deg);
-    }
-    to {
+      }
+
+      to {
         transform: rotateY(180deg);
+      }
     }
-}
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.ball {
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-    border-radius: 1000px;
-}
-.ball {
-    animation: ballSize 2s infinite ease-in-out;
-}
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-@keyframes ballSize {
-    0% {
+    .ball {
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+      border-radius: 1000px;
+    }
+
+    .ball {
+      animation: ballSize 2s infinite ease-in-out;
+    }
+
+    @keyframes ballSize {
+      0% {
         width: 200px;
         height: 200px;
-    }
-    20% {
+      }
+
+      20% {
         width: 400px;
         height: 400px;
-    }
-    30% {
+      }
+
+      30% {
         width: 500px;
-    }
-    40% {
+      }
+
+      40% {
         height: 500px;
-    }
-    50% {
+      }
+
+      50% {
         width: 300px;
         height: 400px;
-    }
-    75% {
+      }
+
+      75% {
         width: 400px;
         height: 500px;
-    }
-    100% {
+      }
+
+      100% {
         width: 200px;
         height: 200px;
+      }
     }
-}
-.ball {
-    background-color: #E5B3E1;
-}
-.ball {
-    box-shadow: 41px 41px 11px 2px #4D4D4D;
-}
-    </style>
-  </head>
-  <body>
-    <div class="cube">
-    <div class="face front">1</div>
-    <div class="face back"><img src="pichu_SSBU_1.jpg" alt=""> </div>
-    <div class="face right">3</div>
-    <div class="face left">4</div>
-    <div class="face top">5</div>
-    <div class="face bottom">6</div>
-</div>
 
-<!-- some of the code adapted from https://developer.mozilla.org/en-US/docs/Web/CSS/perspective -->
-    <img src="image.png" alt="I tried.">
-    <img src="image.png" alt="I tried.">
-    <div class="container">
+    .ball {
+      background-color: #E5B3E1;
+    }
+
+    .ball {
+      box-shadow: 41px 41px 11px 2px #4D4D4D;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cube">
+        <div class="face front">1</div>
+        <div class="face back"><img src="pichu_SSBU_1.jpg" alt=""> </div>
+        <div class="face right">3</div>
+        <div class="face left">4</div>
+        <div class="face top">5</div>
+        <div class="face bottom">6</div>
+  </div>
+
+  <!-- some of the code adapted from https://developer.mozilla.org/en-US/docs/Web/CSS/perspective -->
+  <img src="image.png" alt="I tried.">
+  <img src="image.png" alt="I tried.">
+  <div class="container">
     <div class="ball">
-    <img src="captain_falcon_SSBU.jpg" alt="This should be Captain Falcon but it no work for you">
-    <img src="pichu_SSBU_1.jpg" alt="This should be Pichu but it no work for you">
+      <img src="captain_falcon_SSBU.jpg" alt="This should be Captain Falcon but it no work for you">
+      <img src="pichu_SSBU_1.jpg" alt="This should be Pichu but it no work for you">
     </div>
-</div>
-    <img src="image.png" alt="I tried." class="ears">
-    <img src="image.png" alt="I tried." class="bob">
-    <img src="kirb_1.png" alt="Run.">
-  </body>
+  </div>
+  <img src="image.png" alt="I tried." class="ears">
+  <img src="image.png" alt="I tried." class="bob">
+  <img src="kirb_1.png" alt="Run.">
+</body>
+
 </html>
