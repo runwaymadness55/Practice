@@ -4,56 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>seahorse serenity</title>
-  <style media="screen">
+  <style>
     h1 {
       background: darkblue;
       color: white;
       text-align: center;
     }
 
-    @media only screen and (min-width 768px) {
-
     * {
       box-sizing: border-box;
     }
 
     body {
-      background: lightblue;
+      background: red;
     }
 
     main {
       width: 100%;
-      max-width: 720px;
+      max-width: 480px;
       margin: 0 auto;
-
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .span-col-2 {
-      grid-column: span 2 / auto;
-    }
-
-    .span-col-3 {
-      grid-column: span 3 / auto;
-    }
-
-    nav {
+  nav {
       width: 75%;
-      background: #fed;
       border: solid;
       border-width: 1px;
-      float: left;
     }
 
     article {
-      width: 79%;
-      background: #eee;
-      float: right;
+      width: 50%;
+      background: #ffffff;
       border: solid;
       border-width: 2px;
       border-color: #929292;
@@ -68,16 +48,6 @@
     a:hover {
       text-decoration: underline;
       background-color: pink;
-    }
-
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    img {
-      float: right;
     }
 
     footer {
@@ -98,96 +68,63 @@
     footer li {
       float: left;
     }
-  }
 
-  @media only screen and (max-width 767px) {
+@media screen and (min-width: 800px) {
 
-  * {
-    box-sizing: border-box;
-  }
+      body {
+        background: lightblue;
+      }
 
-  body {
-    background: lightblue;
-  }
+      main {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
 
-  main {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
+      }
 
-  }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
+      .span-col-2 {
+        grid-column: span 2 / auto;
+      }
 
-  .span-col-2 {
-    grid-column: span 2 / auto;
-  }
+      .span-col-3 {
+        grid-column: span 3 / auto;
+      }
 
-  .span-col-3 {
-    grid-column: span 3 / auto;
-  }
+      article {
+        width: 79%;
+        background: #eee;
+        border: solid;
+        border-width: 2px;
+        border-color: #929292;
+        margin-left: 1%;
+        padding: 1%;
+      }
 
-  nav {
-    width: 75%;
-    background: #fed;
-    border: solid;
-    border-width: 1px;
-    float: left;
-  }
+      a:link {
+        text-decoration: none;
+      }
 
-  article {
-    width: 50%;
-    background: #ffffff;
-    float: right;
-    border: solid;
-    border-width: 2px;
-    border-color: #929292;
-    margin-left: 1%;
-    padding: 1%;
-  }
+      a:hover {
+        text-decoration: underline;
+        background-color: pink;
+      }
 
-  a:link {
-    text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: underline;
-    background-color: pink;
-  }
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  img {
-    float: right;
-  }
-
-  footer {
-    border: solid;
-    border-width: 2px;
-    border-color: #525252;
-    margin: 1%;
-    background-color: #ddd;
-    padding: 1%
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 20px;
-    margin: 0px;
-  }
-
-  footer li {
-    float: left;
-  }
-}
+      footer {
+        border: solid;
+        border-width: 2px;
+        border-color: #525252;
+        margin: 1%;
+        background-color: #ddd;
+        padding: 1%
+      }
+    }
   </style>
 </head>
 
