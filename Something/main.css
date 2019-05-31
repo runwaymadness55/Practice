@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Header Header Header""Primary-Image Primary-Image Primary-Image""Secondary-Images Secondary-Images Secondary-Images""Navigation Article Article""Footer Footer Footer";
+}
+
+.Header {
+  grid-area: Header;
+  text-align: center;
+}
+
+.Primary-Image {
+  grid-area: Primary-Image;
+  align-content: center;
+}
+
+.Secondary-Images {
+  grid-area: Secondary-Images;
+}
+
+.Article {
+  grid-area: Article;
+}
+
+.Navigation {
+  grid-area: Navigation;
+}
+
+.Footer {
+  grid-area: Footer;
+}
